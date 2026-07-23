@@ -1,57 +1,60 @@
-# Chorus
+<p align="center">
+  <img src="https://raw.githubusercontent.com/joinchorus/.github/main/assets/readme/hero.svg" alt="Chorus Organization" width="100%">
+</p>
 
-**Identity belongs to the conversation.**
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
+  <a href="https://go.dev"><img src="https://img.shields.io/badge/Go-1.22+-00ADD8.svg" alt="Go 1.22+"></a>
+  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18.3-61DAFB.svg" alt="React 18"></a>
+  <a href="https://git-scm.com"><img src="https://img.shields.io/badge/Storage-Native_Git-F05032.svg" alt="Native Git Engine"></a>
+  <a href="https://github.com/joinchorus"><img src="https://img.shields.io/badge/Open_Source-%E2%9D%A4-brightgreen.svg" alt="Open Source"></a>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Go Version](https://img.shields.io/badge/Go-1.22+-00ADD8.svg)](https://go.dev)
-[![React](https://img.shields.io/badge/React-18.3-61DAFB.svg)](https://react.dev)
-[![Git Persistence Engine](https://img.shields.io/badge/Storage-Native_Git-F05032.svg)](https://git-scm.com)
-[![Open Source](https://img.shields.io/badge/Open_Source-%E2%9D%A4-brightgreen.svg)](https://github.com/joinchorus)
+<h3 align="center">Identity belongs to the conversation. Not to the person.</h3>
+
+---
 
 Chorus is an open-source anonymous discussion platform where identity is scoped to individual conversations instead of user accounts. It eliminates persistent profile tracking, algorithm-driven feeds, and social media mechanics in favor of thoughtful, chronological discourse.
 
 ---
 
-## 🏛️ Ecosystem Overview
-
-The Chorus project is organized into three independent repositories:
-
-### 1. 💬 [Application](https://github.com/joinchorus/chorus) (`chorus`)
-- **Live URL:** [chat.joinchorus.app](https://chat.joinchorus.app)
-- **Deployment:** Firebase App Hosting
-- **Tech Stack:** Go 1.22+, React 18, TypeScript, Vite, TanStack Query
-- **Storage:** Audit-proof native Git commit engine (`internal/gitstore`)
-
-### 2. 📖 [Documentation](https://github.com/joinchorus/docs) (`docs`)
-- **Live URL:** [docs.joinchorus.app](https://docs.joinchorus.app)
-- **Deployment:** Firebase Hosting
-- **Tech Stack:** OpenAPI 3.0, Interactive REST API Reference (13 endpoints), SVG Architecture Diagrams, RFCs
-
-### 3. 🌐 [Website](https://github.com/joinchorus/website) (`website`)
-- **Live URL:** [joinchorus.app](https://joinchorus.app)
-- **Deployment:** Firebase Hosting
-- **Tech Stack:** Editorial HTML5/CSS3, Dark/Light Mode, Product Manifesto
-
----
-
-## 📐 Architecture
+## 🏛️ Ecosystem Architecture
 
 ```
-joinchorus.app (Website)       --> Firebase Hosting     --> website repository
-docs.joinchorus.app (Docs)     --> Firebase Hosting     --> docs repository
-chat.joinchorus.app (App API)  --> Firebase App Hosting --> chorus repository
+joinchorus.app (Website)       --> Firebase Hosting     --> joinchorus/website repository
+docs.joinchorus.app (Docs)     --> Firebase Hosting     --> joinchorus/docs repository
+chat.joinchorus.app (App API)  --> Firebase App Hosting --> joinchorus/chorus repository
 ```
 
 ---
 
-## 🤝 Contributing & Community
+## 📦 Canonical Repositories
 
-Chorus is open source and welcomes contributions! See our contribution guidelines in each repository:
-- [Application Contribution Guide](https://github.com/joinchorus/chorus/blob/main/CONTRIBUTING.md)
-- [Security Policy](https://github.com/joinchorus/chorus/blob/main/SECURITY.md)
+### 1. 💬 [Application (`chorus`)](https://github.com/joinchorus/chorus)
+- **Live Application:** [chat.joinchorus.app](https://chat.joinchorus.app)
+- **Deployment:** Firebase App Hosting (`apphosting.yaml`)
+- **Core Tech:** Go 1.22+, React 18, Vite, Native Git commit audit engine (`internal/gitstore`)
+
+### 2. 📖 [Documentation (`docs`)](https://github.com/joinchorus/docs)
+- **Live Portal:** [docs.joinchorus.app](https://docs.joinchorus.app)
+- **Deployment:** Firebase Hosting (`firebase.json`)
+- **Core Tech:** 13 REST API Endpoint Specifications, 8-Layer SVG Architecture Diagram, 9-Stage Request Lifecycle SVG, RFCs
+
+### 3. 🌐 [Website (`website`)](https://github.com/joinchorus/website)
+- **Live Site:** [joinchorus.app](https://joinchorus.app)
+- **Deployment:** Firebase Hosting (`firebase.json`)
+- **Core Tech:** Editorial Product Manifesto, Apple/Linear visual style, Dark/Light Mode
+
+---
+
+## 🤝 Community & Security
+
+- **Security Policy:** [SECURITY.md](https://github.com/joinchorus/chorus/blob/main/SECURITY.md)
+- **Contributing Guidelines:** [CONTRIBUTING.md](https://github.com/joinchorus/chorus/blob/main/CONTRIBUTING.md)
+- **Code of Conduct:** [CODE_OF_CONDUCT.md](https://github.com/joinchorus/chorus/blob/main/CODE_OF_CONDUCT.md)
 
 ---
 
 ## 📄 License
 
-All Chorus repositories are distributed under the [MIT License](LICENSE).
+All Chorus repositories are open source and distributed under the [MIT License](LICENSE).
