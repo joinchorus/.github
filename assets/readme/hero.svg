@@ -45,20 +45,20 @@
         <!-- Repo 1: chorus -->
         <rect fill="#0d1117" stroke="#30363d" stroke-width="1" x="0" y="0" width="452" height="60" rx="8" />
         <text class="repo-name" x="20" y="26">joinchorus/chorus</text>
-        <text class="repo-desc" x="20" y="46">Go Backend, React SPA, REST API &amp; Native Git Engine &bull; chat.joinchorus.app</text>
+        <text class="repo-desc" x="20" y="46">Go Backend, React SPA, REST API &amp; Native Git Engine &#8226; chat.joinchorus.app</text>
 
         <!-- Repo 2: website -->
         <g transform="translate(0, 72)">
           <rect fill="#0d1117" stroke="#30363d" stroke-width="1" x="0" y="0" width="452" height="60" rx="8" />
           <text class="repo-name" x="20" y="26">joinchorus/website</text>
-          <text class="repo-desc" x="20" y="46">Marketing Website &amp; Product Manifesto &bull; joinchorus.app</text>
+          <text class="repo-desc" x="20" y="46">Marketing Website &amp; Product Manifesto &#8226; joinchorus.app</text>
         </g>
 
         <!-- Repo 3: docs -->
         <g transform="translate(0, 144)">
           <rect fill="#0d1117" stroke="#30363d" stroke-width="1" x="0" y="0" width="452" height="60" rx="8" />
           <text class="repo-name" x="20" y="26">joinchorus/docs</text>
-          <text class="repo-desc" x="20" y="46">13 REST API Specs, Architecture &amp; RFCs &bull; docs.joinchorus.app</text>
+          <text class="repo-desc" x="20" y="46">13 REST API Specs, Architecture &amp; RFCs &#8226; docs.joinchorus.app</text>
         </g>
       </g>
     </g>
