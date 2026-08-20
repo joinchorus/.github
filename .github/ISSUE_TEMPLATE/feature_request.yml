@@ -1,0 +1,45 @@
+name: 💡 Feature Request / Architecture Proposal
+description: Propose a new feature, enhancement, or architecture RFC
+labels: ["enhancement", "proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing an enhancement to Chorus!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement / Context
+      description: What problem or limitation does this proposal solve?
+      placeholder: Is your feature request related to a specific problem or bottleneck?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution & Architecture
+      description: A clear description of the proposed solution and design.
+      placeholder: How should this work? What components are affected?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Any alternative solutions, trade-offs, or architectures considered.
+    validations:
+      required: false
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected Component(s)
+      multiple: true
+      options:
+        - Go Backend Engine (`cmd/server`, `internal/`)
+        - React Web SPA (`web/`)
+        - Native Git Storage Layer (`internal/gitstore`)
+        - Moderation Subsystem (`internal/moderation`)
+        - Documentation Portal (`joinchorus/docs`)
+        - CI / Infrastructure
+    validations:
+      required: true
