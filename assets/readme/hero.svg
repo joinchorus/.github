@@ -1,66 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="auto">
-  <defs>
-    <style>
-      .bg { fill: #0d1117; }
-      .border { fill: none; stroke: #21262d; stroke-width: 2; }
-      .card-bg { fill: #161b22; stroke: #30363d; stroke-width: 1.5; }
-      .text-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; font-size: 52px; fill: #f0f6fc; letter-spacing: -0.05em; }
-      .text-tagline { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 500; font-size: 22px; fill: #8b949e; }
-      .badge-bg { fill: #238636; fill-opacity: 0.15; stroke: #3fb950; stroke-width: 1.5; }
-      .badge-text { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 13px; font-weight: 700; fill: #3fb950; letter-spacing: 0.05em; }
-      .repo-name { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 15px; font-weight: 700; fill: #58a6ff; }
-      .repo-desc { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 12px; fill: #8b949e; }
-    </style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-labelledby="t d">
+  <title id="t">Chorus: identity belongs to the conversation</title>
+  <desc id="d">Chorus organization banner with the speech-bubble C monogram, the tagline, and an illustrative conversation in which participants named Ash, River and Echo exchange three short messages.</desc>
+  <style>
+    :root { --bg:#ffffff; --sub:#f9fafb; --tx:#111827; --tx2:#4b5563; --bd:#eaecf0; --ac:#0969da; --bub:#f3f4f6; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#121417; --sub:#1a1d21; --tx:#e6edf3; --tx2:#9198a1; --bd:#30363d; --ac:#58a6ff; --bub:#22262c; } }
+    text { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; fill:var(--tx); }
+    .m { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .s { fill:var(--tx2); }
+    .a { fill:var(--ac); }
+    .panel { fill:var(--sub); stroke:var(--bd); stroke-width:2; }
+    .bub { fill:var(--bub); stroke:var(--bd); stroke-width:2; }
+  </style>
+  <rect x="1" y="1" width="1198" height="438" rx="24" fill="var(--bg)" stroke="var(--bd)" stroke-width="2"/>
+  <g transform="translate(112 112) scale(0.22)">
+    <path d="M 90 -165 A 185 185 0 1 0 -150 75 L -205 160 L -115 145 A 185 185 0 0 0 90 165" fill="none" stroke="var(--ac)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 60 -105 A 120 120 0 1 0 60 105" fill="none" stroke="var(--tx)" stroke-width="28" stroke-linecap="round"/>
+  </g>
+  <text x="190" y="110" font-size="68" font-weight="800" letter-spacing="-2">Chorus</text>
+  <text class="m s" x="190" y="146" font-size="20">github.com/joinchorus</text>
+  <g font-size="52" font-weight="800" letter-spacing="-1.5">
+    <text x="64" y="244">Identity belongs to</text>
+    <text x="64" y="304">the conversation.</text>
+    <text class="s" x="64" y="364">Not the person.</text>
+  </g>
+  <text class="s" x="64" y="410" font-size="22">Open-source anonymous discussion · early development · MIT</text>
 
-  <!-- Outer Background -->
-  <rect class="bg" width="1200" height="420" rx="16" />
-  <rect class="border" x="1" y="1" width="1198" height="418" rx="15" />
-
-  <!-- Content Container -->
-  <g transform="translate(60, 60)">
-    <!-- Top Badge -->
-    <rect class="badge-bg" x="0" y="0" width="220" height="32" rx="16" />
-    <text class="badge-text" x="110" y="21" text-anchor="middle">OPEN SOURCE ECOSYSTEM</text>
-
-    <!-- Main Title -->
-    <text class="text-title" x="0" y="100">Chorus Project</text>
-
-    <!-- Subtitle -->
-    <text class="text-tagline" x="0" y="142">Identity belongs to the conversation.</text>
-
-    <!-- Right-Side Visual Card: Ecosystem Topology -->
-    <g transform="translate(580, -10)">
-      <rect class="card-bg" x="0" y="0" width="500" height="290" rx="12" />
-      
-      <!-- Card Header -->
-      <path d="M0 12C0 5.37 5.37 0 12 0H488C494.63 0 500 5.37 500 12V40H0V12Z" fill="#21262d" />
-      <circle cx="20" cy="20" r="6" fill="#ff5f56" />
-      <circle cx="40" cy="20" r="6" fill="#ffbd2e" />
-      <circle cx="60" cy="20" r="6" fill="#27c93f" />
-      <text font-family="ui-monospace, SFMono-Regular, monospace" font-size="12" fill="#8b949e" x="80" y="24">github.com/joinchorus</text>
-
-      <!-- Repo Cards Grid -->
-      <g transform="translate(24, 60)">
-        <!-- Repo 1: chorus -->
-        <rect fill="#0d1117" stroke="#30363d" stroke-width="1" x="0" y="0" width="452" height="60" rx="8" />
-        <text class="repo-name" x="20" y="26">joinchorus/chorus</text>
-        <text class="repo-desc" x="20" y="46">Go Backend, React SPA, REST API &amp; Native Git Engine &#8226; chat.joinchorus.app</text>
-
-        <!-- Repo 2: website -->
-        <g transform="translate(0, 72)">
-          <rect fill="#0d1117" stroke="#30363d" stroke-width="1" x="0" y="0" width="452" height="60" rx="8" />
-          <text class="repo-name" x="20" y="26">joinchorus/website</text>
-          <text class="repo-desc" x="20" y="46">Marketing Website &amp; Product Manifesto &#8226; joinchorus.app</text>
-        </g>
-
-        <!-- Repo 3: docs -->
-        <g transform="translate(0, 144)">
-          <rect fill="#0d1117" stroke="#30363d" stroke-width="1" x="0" y="0" width="452" height="60" rx="8" />
-          <text class="repo-name" x="20" y="26">joinchorus/docs</text>
-          <text class="repo-desc" x="20" y="46">13 REST API Specs, Architecture &amp; RFCs &#8226; docs.joinchorus.app</text>
-        </g>
-      </g>
-    </g>
+  <g id="thread">
+    <rect class="panel" x="660" y="48" width="476" height="344" rx="20"/>
+    <text class="m s" x="688" y="88" font-size="20">thread, illustrative</text>
+    <rect class="bub" x="688" y="112" width="330" height="76" rx="38"/>
+    <text class="a" x="718" y="142" font-size="20" font-weight="700">Ash</text>
+    <text x="718" y="172" font-size="22">Who am I talking to?</text>
+    <rect fill="var(--tx)" x="778" y="208" width="330" height="76" rx="38"/>
+    <text x="808" y="238" font-size="20" font-weight="700" style="fill:var(--ac)">River</text>
+    <text x="808" y="268" font-size="22" style="fill:var(--bg)">Nobody in particular.</text>
+    <rect class="bub" x="688" y="304" width="330" height="76" rx="38"/>
+    <text class="a" x="718" y="334" font-size="20" font-weight="700">Echo</text>
+    <text x="718" y="364" font-size="22">Only what is said.</text>
   </g>
 </svg>

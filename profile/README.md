@@ -1,60 +1,46 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/joinchorus/.github/main/assets/readme/hero.svg" alt="Chorus Organization" width="100%">
+  <img src="https://raw.githubusercontent.com/joinchorus/.github/main/assets/readme/hero.svg" alt="Chorus. Identity belongs to the conversation. Not the person. An illustrative thread between Ash, River and Echo." width="100%">
 </p>
 
 <p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"></a>
-  <a href="https://go.dev"><img src="https://img.shields.io/badge/Go-1.22+-00ADD8.svg" alt="Go 1.22+"></a>
-  <a href="https://react.dev"><img src="https://img.shields.io/badge/React-18.3-61DAFB.svg" alt="React 18"></a>
-  <a href="https://git-scm.com"><img src="https://img.shields.io/badge/Storage-Native_Git-F05032.svg" alt="Native Git Engine"></a>
-  <a href="https://github.com/joinchorus"><img src="https://img.shields.io/badge/Open_Source-%E2%9D%A4-brightgreen.svg" alt="Open Source"></a>
+  <a href="https://chat.joinchorus.app"><b>Live demo</b></a> ·
+  <a href="https://joinchorus.app">Website</a> ·
+  <a href="https://docs.joinchorus.app">Docs</a> ·
+  <a href="https://github.com/joinchorus/chorus/discussions">Discussions</a>
 </p>
 
-<h3 align="center">Identity belongs to the conversation. Not to the person.</h3>
+## Who we are
 
----
+Chorus is an open-source project from Türkiye. We are building an anonymous discussion engine with no accounts, no profiles, no likes and no ranking. Each conversation gives every participant a temporary name that exists only in that conversation, and nothing follows you out of it.
 
-Chorus is an open-source anonymous discussion platform where identity is scoped to individual conversations instead of user accounts. It eliminates persistent profile tracking, algorithm-driven feeds, and social media mechanics in favor of thoughtful, chronological discourse.
+Everything here is early development (`chorus` is v0.1.0-alpha) and MIT licensed. Expect rough edges.
 
----
+## What we build
 
-## 🏛️ Ecosystem Architecture
+<p align="center">
+  <img src="https://raw.githubusercontent.com/joinchorus/.github/main/assets/readme/ecosystem.svg" alt="Three repositories: chorus, the discussion engine at chat.joinchorus.app; docs, the API reference at docs.joinchorus.app; website, the manifesto at joinchorus.app." width="100%">
+</p>
 
-```
-joinchorus.app (Website)       --> Firebase Hosting     --> joinchorus/website repository
-docs.joinchorus.app (Docs)     --> Firebase Hosting     --> joinchorus/docs repository
-chat.joinchorus.app (App API)  --> Firebase App Hosting --> joinchorus/chorus repository
-```
+| Repository | What it is | Live |
+| :--- | :--- | :--- |
+| [`chorus`](https://github.com/joinchorus/chorus) | The anonymous discussion engine: a Go 1.22 standard-library backend and a React 19.2 / Vite 8 app | [chat.joinchorus.app](https://chat.joinchorus.app) |
+| [`docs`](https://github.com/joinchorus/docs) | REST API reference (7 documented endpoints), architecture and write-lifecycle diagrams, and RFC-001 on Git persistence | [docs.joinchorus.app](https://docs.joinchorus.app) |
+| [`website`](https://github.com/joinchorus/website) | The manifesto site | [joinchorus.app](https://joinchorus.app) |
 
----
+## How it works
 
-## 📦 Canonical Repositories
+Every thread and message is a JSON file that is committed to a local Git repository, so the history is plain, append-only Git history you can read with ordinary Git tools. Moderation removals are hidden when a thread is read but stay in that history. Names are scoped to a thread, and threads are read in chronological order.
 
-### 1. 💬 [Application (`chorus`)](https://github.com/joinchorus/chorus)
-- **Live Application:** [chat.joinchorus.app](https://chat.joinchorus.app)
-- **Deployment:** Firebase App Hosting (`apphosting.yaml`)
-- **Core Tech:** Go 1.22+, React 18, Vite, Native Git commit audit engine (`internal/gitstore`)
+## Contribute
 
-### 2. 📖 [Documentation (`docs`)](https://github.com/joinchorus/docs)
-- **Live Portal:** [docs.joinchorus.app](https://docs.joinchorus.app)
-- **Deployment:** Firebase Hosting (`firebase.json`)
-- **Core Tech:** 13 REST API Endpoint Specifications, 8-Layer SVG Architecture Diagram, 9-Stage Request Lifecycle SVG, RFCs
+Start with the [contributing guide](https://github.com/joinchorus/.github/blob/main/CONTRIBUTING.md); `docs` and `website` have their own repository-specific guides. Everyone taking part is expected to follow the [Code of Conduct](https://github.com/joinchorus/.github/blob/main/CODE_OF_CONDUCT.md).
 
-### 3. 🌐 [Website (`website`)](https://github.com/joinchorus/website)
-- **Live Site:** [joinchorus.app](https://joinchorus.app)
-- **Deployment:** Firebase Hosting (`firebase.json`)
-- **Core Tech:** Editorial Product Manifesto, Apple/Linear visual style, Dark/Light Mode
+## Security
 
----
+Please do not open a public issue for a vulnerability. Use [private vulnerability reporting](https://github.com/joinchorus/chorus/security/advisories/new), which is enabled on every repository, and read the [security policy](https://github.com/joinchorus/.github/blob/main/SECURITY.md).
 
-## 🤝 Community & Security
+## Community and support
 
-- **Security Policy:** [SECURITY.md](https://github.com/joinchorus/chorus/blob/main/SECURITY.md)
-- **Contributing Guidelines:** [CONTRIBUTING.md](https://github.com/joinchorus/chorus/blob/main/CONTRIBUTING.md)
-- **Code of Conduct:** [CODE_OF_CONDUCT.md](https://github.com/joinchorus/chorus/blob/main/CODE_OF_CONDUCT.md)
+Ask questions and share ideas in [Discussions](https://github.com/joinchorus/chorus/discussions). See [SUPPORT.md](https://github.com/joinchorus/.github/blob/main/SUPPORT.md) for where to get help.
 
----
-
-## 📄 License
-
-All Chorus repositories are open source and distributed under the [MIT License](LICENSE).
+Maintained by [Barış Salih Babacan](https://github.com/barissalihbabacan) and [Mehmet Emin Dereci](https://github.com/MEmin00) (original concept).
