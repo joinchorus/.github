@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="t d">
+  <title id="t">joinchorus/.github: community health files</title>
+  <desc id="d">Banner for the joinchorus .github repository with the Chorus monogram and four file chips: CONTRIBUTING, CODE_OF_CONDUCT, SECURITY and SUPPORT.</desc>
+  <style>
+    :root { --bg:#ffffff; --sub:#f9fafb; --tx:#111827; --tx2:#4b5563; --bd:#eaecf0; --ac:#0969da; --bub:#f3f4f6; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#121417; --sub:#1a1d21; --tx:#e6edf3; --tx2:#9198a1; --bd:#30363d; --ac:#58a6ff; --bub:#22262c; } }
+    text { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; fill:var(--tx); }
+    .m { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .s { fill:var(--tx2); }
+    .a { fill:var(--ac); }
+    .panel { fill:var(--sub); stroke:var(--bd); stroke-width:2; }
+    .bub { fill:var(--bub); stroke:var(--bd); stroke-width:2; }
+  </style>
+  <rect x="1" y="1" width="1198" height="238" rx="20" fill="var(--bg)" stroke="var(--bd)" stroke-width="2"/>
+  <g transform="translate(92 90) scale(0.16)">
+    <path d="M 90 -165 A 185 185 0 1 0 -150 75 L -205 160 L -115 145 A 185 185 0 0 0 90 165" fill="none" stroke="var(--ac)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 60 -105 A 120 120 0 1 0 60 105" fill="none" stroke="var(--tx)" stroke-width="28" stroke-linecap="round"/>
+  </g>
+  <text class="m" x="144" y="96" font-size="44" font-weight="700" letter-spacing="-1">.github</text>
+  <text class="s" x="64" y="154" font-size="24">Shared community health files for every joinchorus repository.</text>
+  <text class="m s" x="64" y="198" font-size="20">joinchorus/.github · MIT</text>
+  <g class="m" font-size="20" font-weight="600">
+    <rect class="panel" x="800" y="40" width="168" height="48" rx="24"/><text x="884" y="71" text-anchor="middle">CONTRIBUTING</text>
+    <rect class="panel" x="984" y="40" width="168" height="48" rx="24"/><text x="1068" y="71" text-anchor="middle">SECURITY</text>
+    <rect class="panel" x="800" y="104" width="168" height="48" rx="24"/><text x="884" y="135" text-anchor="middle">SUPPORT</text>
+    <rect class="panel" x="984" y="104" width="168" height="48" rx="24"/><text x="1068" y="135" text-anchor="middle">CONDUCT</text>
+    <rect class="panel" x="800" y="168" width="352" height="48" rx="24"/><text x="976" y="199" text-anchor="middle" class="a">issue forms · PR template</text>
+  </g>
+</svg>

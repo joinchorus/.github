@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
+  <title id="t">The three Chorus repositories</title>
+  <desc id="d">Three cards. chorus: the anonymous discussion engine, live at chat.joinchorus.app. docs: API reference and design documents, at docs.joinchorus.app. website: the manifesto site, at joinchorus.app.</desc>
+  <style>
+    :root { --bg:#ffffff; --sub:#f9fafb; --tx:#111827; --tx2:#4b5563; --bd:#eaecf0; --ac:#0969da; --bub:#f3f4f6; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#121417; --sub:#1a1d21; --tx:#e6edf3; --tx2:#9198a1; --bd:#30363d; --ac:#58a6ff; --bub:#22262c; } }
+    text { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; fill:var(--tx); }
+    .m { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+    .s { fill:var(--tx2); }
+    .a { fill:var(--ac); }
+    .panel { fill:var(--sub); stroke:var(--bd); stroke-width:2; }
+    .bub { fill:var(--bub); stroke:var(--bd); stroke-width:2; }
+  </style>
+  <rect x="1" y="1" width="1198" height="318" rx="24" fill="var(--bg)" stroke="var(--bd)" stroke-width="2"/>
+  <g>
+    <rect class="panel" x="48" y="48" width="352" height="224" rx="18"/>
+    <rect class="panel" x="424" y="48" width="352" height="224" rx="18"/>
+    <rect class="panel" x="800" y="48" width="352" height="224" rx="18"/>
+  </g>
+  <g font-size="22">
+    <text class="m" x="76" y="98" font-size="26" font-weight="700">chorus</text>
+    <text class="s" x="76" y="140">Anonymous discussion</text>
+    <text class="s" x="76" y="170">engine. Go and React.</text>
+    <text class="m a" x="76" y="240" font-size="20" font-weight="600">chat.joinchorus.app</text>
+
+    <text class="m" x="452" y="98" font-size="26" font-weight="700">docs</text>
+    <text class="s" x="452" y="140">REST API reference,</text>
+    <text class="s" x="452" y="170">diagrams and RFCs.</text>
+    <text class="m a" x="452" y="240" font-size="20" font-weight="600">docs.joinchorus.app</text>
+
+    <text class="m" x="828" y="98" font-size="26" font-weight="700">website</text>
+    <text class="s" x="828" y="140">The manifesto, in</text>
+    <text class="s" x="828" y="170">one scrolling page.</text>
+    <text class="m a" x="828" y="240" font-size="20" font-weight="600">joinchorus.app</text>
+  </g>
+  <g fill="none" stroke="var(--ac)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 352 80 h 20 v 20 M 372 80 l -22 22"/>
+    <path d="M 728 80 h 20 v 20 M 748 80 l -22 22"/>
+    <path d="M 1104 80 h 20 v 20 M 1124 80 l -22 22"/>
+  </g>
+</svg>
