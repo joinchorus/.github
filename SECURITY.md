@@ -5,7 +5,7 @@
 Chorus operates strictly across standardized public subdomains:
 - **Public Site:** [joinchorus.app](https://joinchorus.app)
 - **Application & API:** [chat.joinchorus.app](https://chat.joinchorus.app)
-- **Documentation & Security Guides:** [docs.joinchorus.app/security](https://docs.joinchorus.app/security)
+- **Documentation:** [docs.joinchorus.app](https://docs.joinchorus.app)
 
 ---
 
@@ -15,7 +15,7 @@ We take the security and anonymity guarantees of Chorus seriously. If you discov
 
 ### How to Report
 
-1. **GitHub Private Vulnerability Reporting**: Use the **Security** tab on the [Chorus Repository](https://github.com/joinchorus/chorus/security) to submit a confidential advisory report.
+1. **GitHub Private Vulnerability Reporting** (preferred): open a confidential report from the **Security** tab of the affected repository, e.g. [joinchorus/chorus](https://github.com/joinchorus/chorus/security/advisories/new). It is enabled on every joinchorus repository.
 2. **Email**: Send detailed disclosures to `security@joinchorus.app` (or maintainers at `barissalih@babacan.me` / `baris.salih.babacan@gmail.com`).
 
 Please include:
@@ -36,6 +36,6 @@ Please include:
 We are particularly interested in reports related to:
 - **Anonymity Breaches**: Vulnerabilities that allow cross-thread correlation or unmasking of ephemeral identities.
 - **IP Address Leaks**: Exposure of client IP addresses beyond the server layer.
-- **Data Integrity & Tampering**: Exploits circumventing native Git append-only commit logs or moderation signatures.
+- **Data Integrity & Tampering**: Exploits that rewrite or bypass the append-only Git commit history or the moderation records.
 - **Authorization Bypasses**: Bypassing admin authentication on `/api/v0.1/moderation/*` or `/api/v1/moderation/*`.
 - **Injection & Memory Safety**: Injection vulnerabilities in Go backend, React SPA XSS, or memory safety issues.
