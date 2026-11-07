@@ -8,7 +8,7 @@ We want your experience with Chorus to be seamless. Here are the best ways to ge
 
 Before opening an issue, check the official documentation portals:
 - **Documentation Portal:** [docs.joinchorus.app](https://docs.joinchorus.app)
-- **API Reference & Specifications:** [docs.joinchorus.app/api](https://docs.joinchorus.app)
+- **API Reference:** the REST API section of [docs.joinchorus.app](https://docs.joinchorus.app)
 - **Architecture RFCs:** [joinchorus/docs/rfcs](https://github.com/joinchorus/docs/tree/main/rfcs)
 
 ---

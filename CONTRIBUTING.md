@@ -42,6 +42,10 @@ Chorus is an open-source anonymous discussion platform with native Git-backed ap
 Before submitting any Pull Request, ensure that all test suites and builds pass cleanly:
 
 ```bash
+# Formatting and static checks (enforced in CI)
+gofmt -l $(git ls-files '*.go')   # must print nothing
+go vet ./...
+
 # Run Go unit and integration test suite
 go test -v ./...
 
